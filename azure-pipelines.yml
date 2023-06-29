@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
 schedules:
-- cron: '29 11 * * 4'
+- cron: '30 11 * * 4'
   displayName: Test Cron
   branches:
     include:
@@ -25,5 +25,3 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-- bash: print "Hello World!"
-  displayName: Run Bash
